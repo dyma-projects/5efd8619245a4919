@@ -1,0 +1,20 @@
+<h2>Component exercice 1</h2>
+<p>Voici 3 exemples de liaison</p>
+<ul>
+    <li>exemple 1 : {{ exemple1 }}</li>
+    <li>
+        exemmple 2 : Liaison de propriété
+        <a [href]="link" target="_blank">Dyma</a>
+    </li>
+    <li>
+        exemple 3 : Liaison d'événements
+        <button 
+            [style.background]="bgc" 
+            (click)="changeColor('blue')"
+            (mouseenter)="changeColor('green')"
+            (mouseleave)="changeColor('purple')"
+            >
+            Click
+        </button>
+    </li>
+</ul>
